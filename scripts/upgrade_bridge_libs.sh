@@ -55,6 +55,10 @@ do
 
   INDEX=${INDEX}+1
 
+  echo "Moving libs..."
+  cp -r {android,ios,lib,linux,macos,windows} ../
+  rm -rf {android,ios,lib,linux,macos,windows}
+  
   echo "Updated"
   echo "--------------------------------------------"
 done

@@ -39,7 +39,8 @@ curl -L -o $TMP_FILE "$FILE_URL"
 echo "Extracting: $TMP_FILE to $OUTPUT_DIR"
 mkdir -p $OUTPUT_DIR
 tar -xz --strip-components=1 --directory=$OUTPUT_DIR --file=$TMP_FILE 
-
+cp -r lib ../
+rm -rf lib
 echo "All updated"
 
 
